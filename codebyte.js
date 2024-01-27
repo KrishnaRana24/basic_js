@@ -80,18 +80,6 @@ function LetterChanges(str) {
 console.log(LetterChanges("hello*3"));
 console.log(LetterChanges("fun times!"));
 
-function lchanges(str) {
-  str = str.replace(/[a-zA-Z0-9]/g, function (cho) {
-    if (cho === "z") {
-      return "a";
-    } else if (cho === "Z") {
-      return "A";
-    } else {
-      return String.fromCharCode(cho.charCodeAt(0) + 1);
-    }
-  });
-  return;
-}
 // Simple Adding
 // Have the function SimpleAdding(num) add up all the numbers from 1 to num. For example: if
 // the input is 4 then your program should return 10 because 1 + 2 + 3 + 4 = 10. For the test cases,
